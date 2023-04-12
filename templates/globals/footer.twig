@@ -1,0 +1,59 @@
+<!-- =======================
+Footer START -->
+<footer class="bg-dark pt-5">
+		{% set logol = header.logoLight.one() %}
+       	{% set logod = header.logoDark.one() %}
+	<div class="container">
+		<!-- About and Newsletter START -->
+		<div class="row pt-3 pb-4">
+			<div class="col-md-3">
+				<img src="{{ logol.url }}" alt="footer logo">
+			</div>
+			<div class="col-md-8">
+				<p class="text-muted">{{ footer.commonExcerpt }}</p>
+			</div>
+			
+		</div>	
+	</div>
+
+	<!-- Footer copyright START -->
+	<div class="bg-dark-overlay-3 mt-5">
+		<div class="container">
+			<div class="row align-items-center justify-content-md-between py-4">
+				<div class="col-md-6">
+					<!-- Copyright -->
+					<div class="text-center text-md-start text-primary-hover text-muted">{{ footer.copyright }}
+					</div>
+				</div>
+				<div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end">
+					<!-- Language switcher -->
+					<div class="dropup me-0 me-sm-3 mt-3 mt-md-0 text-center text-sm-end">
+						<a class="dropdown-toggle text-primary-hover" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+							English Edition
+						</a>
+						<ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
+							<li><a class="dropdown-item" href="#">English</a></li>
+							<li><a class="dropdown-item" href="#">German - Coming Soon</a></li>
+							<li><a class="dropdown-item" href="#">French - Coming Soon</a></li>
+							<li><a class="dropdown-item" href="#">Italian - Coming Soon</a></li>
+							<li><a class="dropdown-item" href="#">Spanish - Coming Soon</a></li>
+							<li><a class="dropdown-item" href="#">Portugese - Coming Soon</a></li>
+							<li><a class="dropdown-item" href="#">Polish - Coming Soon</a></li>
+						</ul>
+					</div>
+					<!-- Links -->
+					<ul class="nav text-primary-hover text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0">
+						{% for link in footer.footerNav.all() %}
+                            {% set destination = link.linkDescription.one() %}
+                            {% set activeLink = craft.app.request.segments|first == destination.uri %}
+							<li class="nav-item"> <a class="nav-link" href="{{ destination.url }}">{{ link.linkText }}</a></li>
+							{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer copyright END -->
+</footer>
+<!-- =======================
+Footer END -->

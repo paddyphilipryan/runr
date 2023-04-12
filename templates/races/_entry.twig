@@ -1,0 +1,139 @@
+{% extends "index" %}
+
+
+{% set pageTitle = entry.title %}
+{% set pageDescription = entry.commonExcerpt %}
+
+{% block content %}
+
+
+
+<!-- =======================
+Inner intro START -->
+<section class="pt-2">
+	<div class="container">
+		<div class="row">
+      <div class="col-12">
+        <div class="card bg-dark-overlay-5 overflow-hidden card-bg-scale h-400 text-center" style="background-image:url({{ entry.featuredImage.one().getUrl('catHero') }}); background-position: center left; background-size: cover;">
+          <!-- Card Image overlay -->
+          <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4"> 
+            <div class="w-100 my-auto">
+              <!-- Card title -->
+              <h2 class="text-white display-5">{{ entry.title }}</h2>
+              <!-- Card info -->
+              <ul class="nav nav-divider text-white-force align-items-center justify-content-center">
+                <li class="nav-item">{{ entry.raceDate|date('d M Y') }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+
+<section class="pt-2">
+<div class="container">
+<div class="row">
+        <div class="col-lg-4">
+           <div class="profile-card-4 z-depth-3" >
+            <div class="card" >
+              <div class="card-body text-center bg-primary rounded-top h-200" style="background-image:url({{ entry.featuredImage.one().getUrl('catHero') }}); background-position: center left; background-size: cover;">
+               <div class="user-box">
+                
+              </div>
+           
+             </div>
+              <div class="card-body">
+                <ul class="list-group shadow-none">
+                <li class="list-group-item">
+                  <div class="list-icon">
+                    
+                  </div>
+                  <div class="list-details">
+                    <a href="{{ entry.raceEntry }}"><span>Enter Race</span></a>
+                    <small>Registration Website</small>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="list-icon">
+                  </div>
+                  <div class="list-details">
+                    <a href="{{ entry.raceEmail }}"><span>Email Organisers</span></a>
+                    <small>Event Email Address</small>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="list-icon">
+                  </div>
+                  <div class="list-details">
+                    <a href="{{ entry.raceWebsite }}"><span>Timing Page</span></a>
+                    <small>Event Page</small>
+                  </div>
+                </li>
+                </ul>
+                <div class="row text-center mt-4">
+  
+                 </div>
+               </div>
+              
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-8">
+           <div class="card z-depth-3">
+            <div class="card-body">
+            <div class="tab-content p-3">
+                <div class="tab-pane active show" id="profile">
+                    <h5 class="mb-3">Race Profile</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>{{ entry.title }}</h4>
+                            
+                            <p><b>Race Date: </b>{{ entry.raceDate|date('d M Y') }}</br>
+                            
+                            <p><b>Race Distance: </b>{% for raceDistance in entry.raceDistances.all() %}{{ raceDistance.title }}, 
+                            {% endfor %}</br>
+                            <p><b>Location:</b>{{entry.raceAddress}}, {{entry.raceCity}}, {{entry.raceCounty}}, {{entry.raceCountry}}</br>
+                            </p>
+                            
+                            <h6>Race Description</h6>
+                            <p>
+                             {{ entry.mainContent }}
+                            </p>
+                            </d>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Previous Results</h5>
+                            <table class="table table-hover table-striped">
+                                <tbody>                                    
+                                            {% for link in entry.raceResults.all() %}
+                                            <tr>
+                                            <td>
+                                            <a class="nav-link" href="{{ link.linkDestination }}">{{ link.linkText }}</a>
+                                            </td>
+                                            </tr>
+                                            {% endfor %}
+                                </tbody>
+                            </table>
+                            <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Gallery</h5>
+                           {% include "races/galleryslider" %}
+                            
+                          
+                            
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+        
+    </div>
+</div>
+</section>
+{% endblock %}

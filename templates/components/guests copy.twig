@@ -1,0 +1,50 @@
+<!-- =======================
+Featured Guests START -->
+<section class="bg-light">
+	<div class="container">
+		<div class="row g-0">
+			<div class="col-12 ">
+				<!-- Title -->
+				<div class="mb-4">
+					<h2>Featured Guests</h2>
+				</div>
+				<!-- Slider -->
+				<div class="tiny-slider arrow-hover arrow-dark arrow-blur arrow-round">
+					<div class="tiny-slider-inner"
+					data-autoplay="false"
+					data-hoverpause="true"
+					data-gutter="24"
+					data-arrow="true"
+					data-dots="false"
+					data-items-xl="6" 
+					data-items-lg="4" 
+					data-items-md="3" 
+					data-items-sm="2" 
+					data-items-xs="2"
+					>
+						
+             <!-- Guest item -->
+			 			{% set blogs = craft.entries.section('blog').all() %}
+                        {% for blog in blogs %} 
+                        {% set photo = blog.featuredImage.one() %}
+						<a href="{{ blog.url }}" class="cta-link">
+						<div>
+							<div class="card bg-transparent">
+								<img class="card-img" src="{{ blog.featuredImage.one().getUrl('miniCard') }}" alt="card image">
+                				<div class="card-body ps-0">
+                  					<h5 class="mb-0">{{ blog.title }}</h5>
+                  					<small>{{blog.postDate|date('d/M/Y')}}</small>
+                				</div>
+							</div>
+						</div>
+						</a>
+						{% endfor %}
+			 <!-- Guest item ENDS -->			
+					</div>
+				</div> <!-- Slider END -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Featured Guests END -->

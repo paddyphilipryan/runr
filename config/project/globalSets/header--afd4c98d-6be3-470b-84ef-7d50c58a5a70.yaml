@@ -1,0 +1,484 @@
+fieldLayouts:
+  87458ecd-7791-4b67-b3a6-338adc72d012:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 02531847-081a-4128-8940-da11ded6e039 # Nav Links
+            instructions: null
+            label: 'Main Navigation'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5b838e1-bcc8-4f43-aba8-9df34dcaedbf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 93b0ddb7-b97e-42da-ab2b-43a0b0cf4a85 # Top Nav
+            instructions: null
+            label: 'Top Bar Navigation'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25d169d5-7391-4127-b4ca-9a5d4a16d4d9
+            userCondition: null
+            warning: null
+            width: 50
+        name: Navigation
+        uid: 876f351a-9807-48e9-9561-b0eabacab902
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a281d71c-3427-428a-9f9f-7433f4ce1ac6 # Logo Dark
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ea36a12-4fea-401a-b11e-5e45d1eb7e64
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2da6fd49-3a57-487a-8efd-63b9f1b94c51 # Logo Light
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8a1a3c7-7956-49e7-aae8-320af0b0cdda
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 4da9bf3c-d944-40a5-8cf4-59f66f1361f7 # Dark Favicon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 335cfd28-ca8e-4dfe-af6a-caf7ad52a2c3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1ede0b1f-b9a6-4065-a835-31e7e4e2e641 # Light Favicon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42adff02-803e-4b11-9e5d-e00cf8301ae9
+            userCondition: null
+            warning: null
+            width: 50
+        name: Logo
+        uid: 7b044146-5b73-43b0-8542-e567e8493fea
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0530ea04-1958-4b00-8b30-cefd3310fd52 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16a6244f-8971-4a3c-a4f2-31d0f0fd847c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 0b310f6d-a50a-4d4c-ac79-1156fc10b5a3 # Strava
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d6ced1b-7b53-4d4f-a02d-6982a21d04f5
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d94980fa-c0be-4f51-a7fb-fb7733d1da26 # WhatsApp
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6499e582-9f6e-4a90-9a91-68888cbf3ab0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: fe2e42cf-4a09-4452-8ce1-6c8f9e74865f # Newsletter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14cf5b1f-1278-4f55-9cb7-9d89f003120f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: d6dfda7b-ac5e-4928-b058-26bd451ded40 # TikTok
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 98da36cd-d6d7-45fd-b29c-ab7b66b2c0e1
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: a1b2b013-7a66-42fd-96c9-388247a8c6b7 # YouTube
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56b7310e-5116-45d6-a8c1-747f145c5ea9
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 9584d9d6-08eb-4372-9515-c76f85f84e93 # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13639c21-7c7f-4e96-a829-695f658cbe8a
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: dd451c83-eab0-43ad-a79c-5393b6ea8c87 # Twitter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8637fef-c0f3-4874-b9de-eaf434e303e3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 48979417-2c5d-412b-b257-474b6aec8c98 # Forum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e84f5b80-bf8f-4312-a0d8-e9ba1a1179ab
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: f88f9558-ae14-4cee-9d40-fc6806e4a6e1 # Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d76456b0-0da1-4a2b-806a-dcbdf2265b01
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: f2d278e1-aa3c-49b4-b14c-fb37e4cc157d # LinkedIn
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14f6357b-29a4-4776-9f12-0045aa294d82
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: b94bd4e1-869c-4783-8e38-c7d072e2265b # Spotify
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6fd6744e-8674-4c7e-bfa2-d72ba680fc03
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 62b886d3-961c-4f69-a2ae-2bb4b9533b4b # Pinterest
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b914807f-6574-473f-a5ea-a9bf6ec0d274
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 87b1dcaa-0ac2-41e8-9bb1-db304f248dba # Snapchat
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ea50fed-44b4-44f5-a1ee-a406b0784542
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 0c96e73f-d139-41a9-ad51-dc9ef3d982c9 # Phone Ireland
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14c6a69a-7ebb-4e40-8182-35891abd3a50
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 5b1b8ca2-87c0-4a2a-978b-c9147a3fcdaa # Phone US
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0fdf7f96-5382-4fdc-b9e1-ce4b9545e6b3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 614ad65f-2ca8-4fc6-926d-693d7fe86702 # Vimeo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62a778f6-0d51-416c-a39d-bc939025ecd3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 59849ade-603d-457e-91d3-ee12bf77a46f # Garmin
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7778c223-0878-4a23-9add-4809eafa1e27
+            userCondition: null
+            warning: null
+            width: 25
+        name: Social
+        uid: 3e2709ac-2ca0-44f4-9178-b1f81b38d3a5
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 40aac9d7-9827-49f3-8c21-f3afc8801788 # Common Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7bb221f-d2b1-421d-b5ca-76643497479b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bce203f4-0c8a-4f88-ad31-21b7682a37d1 # Offcanvas Nav
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 617c9aa5-b5b6-4962-a011-c5e2f63c8345
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 3c95020c-511e-4526-a721-460ce387d128
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 6904bb9d-ab18-43d1-8984-0a01a86ab8d2 # Race Name
+            instructions: null
+            label: 'Website Name'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b620a243-48f7-4d72-b1b1-0dc39b30350d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f4cc1522-e2ab-467b-9d42-c97273ad41be # Race Address
+            instructions: null
+            label: 'CTA Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5877aad2-3714-438c-a46a-aaa257bf37e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ac41c85-0733-463c-be9d-abc5996bb766 # Copyright
+            instructions: null
+            label: 'CTA Text'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2162e67f-c63d-4667-915c-ae3dc983e858
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 969384df-185f-4fde-93ab-e43b5763487a # Race County
+            instructions: null
+            label: 'Button Text'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1bb9f19-b178-4c71-bb4a-2d6cd4b23da5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 81ede3d8-9a67-4a70-b380-347b3d774655 # Race Website
+            instructions: null
+            label: 'Button Destination'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d1568a4-510e-4d58-aa15-2f777d3540c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 10ad3762-e50d-4d23-bf0d-97fff2e6d8fb
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 0b6d247d-b4e6-4ff0-8725-e8911a85259e # Race Country
+            instructions: null
+            label: 'Address Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 845dd88e-3ded-44c3-beca-4a6979f54611
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 33cc00d2-9fab-43dc-8159-86109aec387b # Main Content
+            instructions: 'Needs a link break'
+            label: 'Location and Phone'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aece3d0c-0d83-4b4f-9a70-ae44174a3438
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b0510c0a-3fc7-4f38-8af2-6da2560375ad # General Free Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6450ace1-bce9-4fb8-baac-3b54975281e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a516019-abd6-4fd2-b3b0-f10a6c37a34f # Race Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f7f0ea3-4b73-4db7-b6e2-9eb0e9d16263
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f91fea3-c168-4a62-b5ed-fa7199a48753 # General Free Text 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f47d803-bc65-49d1-958b-b96ef7201df0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29b1f74f-0e55-41fb-8d42-dae2f155f1cb # Race Email
+            instructions: null
+            label: 'Main Email'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1331e988-1115-4334-981d-083fa8453ca2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Off Canvas'
+        uid: a901d942-0c95-415e-b4d8-beae2fa8aefc
+        userCondition: null
+handle: header
+name: Header
+sortOrder: 1

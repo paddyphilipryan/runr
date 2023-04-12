@@ -1,0 +1,27 @@
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="mb-4">
+					<h2 class="m-0"><i class="bi bi-newspaper"></i> New Blogs for You</h2>
+					<p class="m-0">Latest breaking news, interviews, reports and more...</p>
+				</div>
+                <div class="media-scroller snaps-inline">
+                {% set blogs = craft.entries.section('blog').all() %}
+                {% for blog in blogs %} 
+                {% set photo = blog.featuredImage.one() %}
+                    <div class="media-element">
+                        <a href="{{ blog.url }}">
+                        <img src="{{ blog.featuredImage.one().getUrl('cards') }}" alt="">
+                        <p class="card-title-slider">{{ blog.title}}</p>
+                        <p class="card-title-date">{{ blog.author }} - {{blog.postDate|date('d M Y')}}</p></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

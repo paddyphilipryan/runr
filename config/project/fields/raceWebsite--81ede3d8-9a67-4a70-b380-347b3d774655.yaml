@@ -1,0 +1,14 @@
+columnSuffix: vxrqiolt
+contentColumnType: string(255)
+fieldGroup: f0b3c4f3-fd2e-4f0c-b31b-ad26982ff05f # Races
+handle: raceWebsite
+instructions: null
+name: 'Race Website'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,46 @@
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="mb-4">
+					<h2 class="m-0">Club focus</h2>
+					<p class="m-0">Everything starts at grassroots</p>
+				</div>
+                <div class="media-scroller snaps-inline">
+                {% set blogs = craft.entries.section('blog').all() %}
+                {% for blog in blogs %} 
+                {% set photo = blog.featuredImage.one() %}
+                    <div class="media-element">
+                        <div>
+							<div class="card card-overlay-bottom card-img-scale">
+								<!-- Card Image -->
+								<img class="card-img" src="{{ blog.featuredImage.one().getUrl('cards') }}" alt="">
+                                
+								<!-- Card Image overlay -->
+								<div class="card-img-overlay d-flex flex-column p-3-slider p-sm-4"> 
+									
+									<div class="w-100 mt-auto">
+										
+										<!-- Card title -->
+										<p class="text-white slider-home-text"><a href="{{ blog.url }}" class="btn-link text-reset stretched-link">{{ blog.title }}</a></p>
+										<!-- Card info -->
+										<ul class="nav nav-divider text-white-force card-title-date align-items-center d-none d-sm-inline-block small">
+											<li>
+												<div class="nav-link">By <a href="#" class="stretched-link text-reset btn-link">{{ blog.author }} on {{blog.postDate|date('d M Y')}}</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

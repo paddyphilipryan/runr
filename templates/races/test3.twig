@@ -1,0 +1,75 @@
+{% extends "index" %}
+{% block content %}
+{# ... Your existing code for the page layout ... #}
+
+{# Fetch all categories in the 'raceDistance' group #}
+{% set raceDistanceCategories = craft.categories.group('raceDistance').all() %}
+
+{# Create a dropdown filter for 'raceDistance' categories #}
+<form method="get" action="">
+    <select name="filterDistance" id="filterDistance">
+        <option value="">All Distances</option>
+        {% for category in raceDistanceCategories %}
+            <option value="{{ category.slug }}">{{ category.title }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+{# Get the selected 'raceDistance' slug from the query string #}
+{% set selectedDistanceSlug = craft.app.request.getQueryParam('filterDistance') %}
+
+{# Fetch the entries from the 'racesCh' channel #}
+{% set racesEntriesQuery = craft.entries.section('racesCh').raceDate('> now').orderBy('raceDate asc') %}
+
+{# If a category is selected, apply the filtering #}
+{% if selectedDistanceSlug %}
+    {% set selectedDistanceCategory = craft.categories.slug(selectedDistanceSlug).one() %}
+    {% set racesEntriesQuery = racesEntriesQuery.relatedTo(selectedDistanceCategory) %}
+{% endif %}
+
+{% set racesEntries = racesEntriesQuery.all() %}
+
+{# Display the filtered entries #}
+{% for race in racesEntries %}
+    <h3>{{ race.title }}</h3>
+    {% set raceDistanceCategory = race.raceDistances.one() %}
+    {% if raceDistanceCategory %}
+        <div class="race-distance-category1">{{ raceDistanceCategory.title }}</div>
+        <p>Date: {{ race.raceDate|date('d M Y') }}</p>
+    {% endif %}
+{% endfor %}
+
+<div class="carousel5-container">
+    {% for race in racesEntries %}
+        <div class="carousel5-item">
+            <h3>{{ race.title }}</h3>
+            {% set raceDistanceCategory = race.raceDistances.one() %}
+            {% if raceDistanceCategory %}
+                <div class="race-distance-category2">{{ raceDistanceCategory.title }}</div>
+                <p>Date: {{ race.raceDate|date('d M Y') }}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="race-listing-container">
+    {% for race in racesEntries %}
+        <div class="race-listing-card">
+            <div class="race-image-container">
+                <img class="race-image" src="{{ race.featuredImage.one().getUrl('catMini') }}" alt="{{ race.title }}">
+            </div>
+            <div class="race-details-container">
+                <h3 class="race-title">{{ race.title }}</h3>
+                <p class="race-location-date">{{ race.raceCity }}, {{ race.raceCounty }} - {{ race.raceDate|date('d M Y') }}</p>
+                {% set raceDistanceCategory = race.raceDistances.one() %}
+                {% if raceDistanceCategory %}
+                   <div class="race-distance-category2"> {{ raceDistanceCategory.title }}</div>
+                                    {% endif %}                                 
+                <a href="{{ race.url }}" class="race-details-btn">Race Details</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

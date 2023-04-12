@@ -1,0 +1,288 @@
+fieldLayouts:
+  1efb1850-a5b2-46de-a623-1ff06bd21ad1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 11912979-6aec-4b0e-b080-7e84dc55e1c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7f27716-4ea7-4461-8c8a-9b450fc114bd # Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b37cffd-2c45-4b82-8a60-252f476e11a3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: fa7b64ed-a01d-49d6-ac41-0662e5ccddbe # Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ccb76677-17de-49fb-8f5c-50811e739829
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 33cc00d2-9fab-43dc-8159-86109aec387b # Main Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8a5724d-7e78-4608-bea0-de42d1e73a1d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 40aac9d7-9827-49f3-8c21-f3afc8801788 # Common Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c14d25ce-e556-4dd0-9580-df561935a491
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 8940b410-5db4-4037-8e33-cb9e385224b4
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 6904bb9d-ab18-43d1-8984-0a01a86ab8d2 # Race Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bfc2f9a0-094d-4346-ac5a-7e801c18b3e2
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: c0a695eb-5898-4681-a56f-89ede7bc0900 # Race City
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb5207f5-f24d-43fc-8264-b833c9857994
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 969384df-185f-4fde-93ab-e43b5763487a # Race County
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65e97de3-d317-48f2-8616-9458634e7d6c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 0b6d247d-b4e6-4ff0-8725-e8911a85259e # Race Country
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b87cb9d1-e196-4008-a3fe-8ec8f75a4a6b
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: b582d573-5865-4801-932f-8c153ee368b1 # Race Distances
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2ae5c07-db11-415d-81cd-70b01da91e96
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 75f63227-664c-45ee-a912-916f44cdad6b # Race Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a67002e-2437-486a-93dc-03c7ace174db
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 81ede3d8-9a67-4a70-b380-347b3d774655 # Race Website
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db1c567a-d9f1-41b4-9f3d-9d9441f861a9
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 78280077-8dab-4a12-b863-9e7a7aa357b4 # Race Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 919439e9-02fc-444e-a759-c21b49211a7e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 020675ca-488f-445c-87a1-34775775ba32 # Race Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1236585-4e20-4b3c-97d3-42c11bd44862
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 29b1f74f-0e55-41fb-8d42-dae2f155f1cb # Race Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6226e576-d9b7-4030-b106-11c26088ab37
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: df70d708-646b-413d-b0f8-13e35db937cc # Race Location Map
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70316dc5-71a0-4649-a348-a56a58bbdedf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 0a516019-abd6-4fd2-b3b0-f10a6c37a34f # Race Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1316d4c0-ade3-445e-b9ed-985e82fb101e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 7833bd9a-cf0e-432a-9872-edbb37927a9c # Race Results
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83f1638f-e2e1-4195-8b26-98601250727e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: f4cc1522-e2ab-467b-9d42-c97273ad41be # Race Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40e77134-3fa4-4c66-a3e0-ebf705ca0362
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: a68652dc-5b74-4efd-953a-1589c44d26fa # Race Gallery
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8c2acd5-6bce-4f3f-9fe4-5a635823c825
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f91fea3-c168-4a62-b5ed-fa7199a48753 # General Free Text 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82ec2eeb-8064-4ab1-8cd9-25bb551f3a17
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 124a008d-1ef1-42b2-b012-5b02a2daaebb
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: aec34900-7f2f-4c46-aeba-bbdaed24700a # Races Ch
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

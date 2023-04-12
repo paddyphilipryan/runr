@@ -1,0 +1,67 @@
+fieldLayouts:
+  7d7112c3-30be-4119-a062-f0027d2d7a86:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3c618885-db2d-4a54-9ce4-2d4304ac4a78
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 40aac9d7-9827-49f3-8c21-f3afc8801788 # Common Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4801b42-6b8d-47a9-938d-eb27ee478f53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fa7b64ed-a01d-49d6-ac41-0662e5ccddbe # Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41755063-68e4-495a-a03a-33132fe98a33
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4c596ba9-0098-4034-8d6c-97fa78bc5423
+        userCondition: null
+handle: nutrition
+hasTitleField: true
+name: Nutrition
+section: ad540773-d2f0-4b0b-bda6-da13026362eb # Nutrition
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

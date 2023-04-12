@@ -1,0 +1,27 @@
+columnSuffix: mpsmmxlf
+contentColumnType: text
+fieldGroup: 75c788e0-7380-4db6-ae88-26ef60c6eb58 # Common
+handle: htmlField
+instructions: null
+name: 'HTML Field'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

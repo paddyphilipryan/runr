@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: miniCard
+height: 400
+interlace: none
+mode: crop
+name: 'Mini Card'
+position: center-center
+quality: null
+upscale: true
+width: 400

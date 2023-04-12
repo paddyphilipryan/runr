@@ -1,0 +1,31 @@
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="mb-4">
+					<h2 class="m-0">The very latest</h2>
+					<p class="m-0">Latest breaking news, interviews, and more...</p>
+				</div>
+                <div class="media-scroller3 snaps-inline">
+                {% set blogs = craft.entries.section('blog').all() %}
+                {% for blog in blogs %} 
+                {% set photo = blog.featuredImage.one() %}
+                   <div>
+							<div class="card card-overlay-bottom card-img-scale">
+								<img class="card-img" src="{{ blog.featuredImage.one().getUrl('miniCard') }}" alt="card image">
+								<div class="card-img-overlay d-flex px-3 px-sm-5">
+									<h5 class="mt-auto mx-auto">
+										<a href="{{ blog.url }}" class="stretched-link btn-link fw-bold text-white">{{ blog.title }}</a>
+									</h5>
+								</div>
+							</div>
+						</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

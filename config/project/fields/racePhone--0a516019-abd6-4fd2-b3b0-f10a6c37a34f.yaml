@@ -1,0 +1,14 @@
+columnSuffix: yukgskvm
+contentColumnType: string(255)
+fieldGroup: f0b3c4f3-fd2e-4f0c-b31b-ad26982ff05f # Races
+handle: racePhone
+instructions: null
+name: 'Race Phone'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

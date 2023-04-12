@@ -1,0 +1,27 @@
+columnSuffix: xijiaagc
+contentColumnType: text
+fieldGroup: 6bceb3e8-238b-4e43-a2eb-1315829690ef # BlogCommon
+handle: mainContent
+instructions: null
+name: 'Main Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: 4a01ca44-9619-4519-a4c8-ce70516a9b6a # Hero
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

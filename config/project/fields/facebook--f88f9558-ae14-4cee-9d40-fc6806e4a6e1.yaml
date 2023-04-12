@@ -1,0 +1,14 @@
+columnSuffix: bwkowctm
+contentColumnType: string(255)
+fieldGroup: 73618bf8-b226-4a8c-8870-3d5f5c1fef7a # Social Media
+handle: facebook
+instructions: null
+name: Facebook
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

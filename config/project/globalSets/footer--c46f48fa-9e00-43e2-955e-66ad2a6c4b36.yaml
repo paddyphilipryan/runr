@@ -1,0 +1,83 @@
+fieldLayouts:
+  dc7b2e93-84fd-4a7e-aafb-694ed65d17cd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4cf78226-bc4b-48fe-84fe-864897308da9 # Footer Nav
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8e9cf34-79b0-408c-9e27-be01f567b544
+            userCondition: null
+            warning: null
+            width: 50
+        name: Navigation
+        uid: c43721b2-42b7-428f-b47b-1233934981fa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a281d71c-3427-428a-9f9f-7433f4ce1ac6 # Logo Dark
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0e57616-5ec6-41a9-b87f-1eea3a8aa035
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2da6fd49-3a57-487a-8efd-63b9f1b94c51 # Logo Light
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e82b963-b6e2-477e-b0db-6dffd8bb4cdd
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 603ed563-4f19-4dc7-89da-8f97fe383513
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 40aac9d7-9827-49f3-8c21-f3afc8801788 # Common Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cb0db57-e3d8-4380-b092-3d4408394028
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ac41c85-0733-463c-be9d-abc5996bb766 # Copyright
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a627d49-297d-495e-957a-3254abeeec9d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Logos
+        uid: 1739e032-8f97-497a-a706-96e2f2b53aff
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 2

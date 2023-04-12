@@ -1,0 +1,44 @@
+{% extends "index" %}
+
+
+{% set pageTitle = entry.title %}
+{% set pageDescription = entry.commonExcerpt %}
+
+{% block content %}
+
+
+
+{% include "components/fullwidthhero" %}
+<!-- ** LATEST NEWS SLIDER ** -->
+{% include "components/homecards" %}
+
+<!-- ** UPCOMING RACES SECTION ** -->
+{% include "components/race" %}
+
+<!-- ** LATEST BLOGS SLIDER ** -->
+{% include "components/homeblog" %}
+
+<!-- ** CLUB FOCUS SLIDER ** -->
+{% include "components/clubs" %}
+
+<!-- ** PHYSIO CORNER SLIDER ** -->
+{% include "components/physiocorner" %}
+
+<!-- ** NUTRITION SLIDER ** -->
+{% include "components/nutrition" %}	
+
+<!-- ** LATEST NEWS ** -->
+{% include "components/listsection" %}	
+
+<!-- ** MARATHON SLIDER ** -->
+{% include "components/marathons" %}
+
+<!-- ** MARATHON SLIDER ** -->
+{% include "components/parkrun" %}
+
+<!-- ** XCOUNTRY SLIDER ** -->
+{% include "components/xcountry" %}
+
+
+
+{% endblock %}

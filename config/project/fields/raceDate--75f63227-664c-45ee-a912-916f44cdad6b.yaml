@@ -1,0 +1,17 @@
+columnSuffix: gazcjbro
+contentColumnType: datetime
+fieldGroup: f0b3c4f3-fd2e-4f0c-b31b-ad26982ff05f # Races
+handle: raceDate
+instructions: null
+name: 'Race Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: true
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

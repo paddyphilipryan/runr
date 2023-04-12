@@ -1,0 +1,82 @@
+defaultPlacement: end
+fieldLayouts:
+  f8669a74-341d-4121-81b4-e9aeeb526f00:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 56050613-e653-4168-ad6f-2fb30e9c66db
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: fa7b64ed-a01d-49d6-ac41-0662e5ccddbe # Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7bb5bb3-f3fc-4f6d-8df7-60e8d48736e1
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 40aac9d7-9827-49f3-8c21-f3afc8801788 # Common Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3a620d4-c18c-48cf-94f6-758214c58913
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 33cc00d2-9fab-43dc-8159-86109aec387b # Main Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 013aeae2-d4ad-49ae-967b-260a09b08fe7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f6f1dcb0-dd73-4647-a766-22c2c69921f7
+        userCondition: null
+handle: categories
+name: Categories
+siteSettings:
+  e62c9b25-609e-48b9-b7a6-ad33a704654b: # Run Republic
+    hasUrls: true
+    template: category/physio.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 3125767c-7a9d-4ee7-8860-162c767a57d1

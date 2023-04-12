@@ -1,0 +1,43 @@
+<!-- =======================
+Trending topics START -->
+<section class="p-0">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!-- Slider -->
+				<div class="tiny-slider arrow-hover arrow-dark arrow-round">
+					<div class="tiny-slider-inner"
+					data-autoplay="false"
+					data-hoverpause="true"
+					data-gutter="24"
+					data-arrow="true"
+					data-dots="false"
+					data-items-xl="5" 
+					data-items-lg="4" 
+					data-items-md="3" 
+					data-items-sm="2" 
+					data-items-xs="2"
+					>
+						{% set blogs = craft.entries.section('blog').all() %}
+                        {% for blog in blogs %} 
+                        {% set photo = blog.featuredImage.one() %}
+						<!-- Category item -->
+						<div>
+							<div class="card card-overlay-bottom card-img-scale">
+								<img class="card-img" src="{{ blog.featuredImage.one().getUrl('miniCard') }}" alt="card image">
+								<div class="card-img-overlay d-flex px-3 px-sm-5">
+									<h5 class="mt-auto mx-auto">
+										<a href="{{ blog.url }}" class="stretched-link btn-link fw-bold text-white">{{ blog.title }}</a>
+									</h5>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div> <!-- Slider END -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Trending topics END -->

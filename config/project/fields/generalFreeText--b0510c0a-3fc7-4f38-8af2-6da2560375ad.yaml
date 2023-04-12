@@ -1,0 +1,19 @@
+columnSuffix: koeomwua
+contentColumnType: text
+fieldGroup: 75c788e0-7380-4db6-ae88-26ef60c6eb58 # Common
+handle: generalFreeText
+instructions: null
+name: 'General Free Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

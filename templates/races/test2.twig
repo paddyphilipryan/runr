@@ -1,0 +1,118 @@
+{% extends "index" %}
+{% block content %}
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="card card-overlay-bottom h-300 overflow-hidden text-center" style="background-image:url({{ entry.featuredImage.one().getUrl('catHero') }}); background-position: center left; background-size: cover;">
+					<!-- Card Image overlay -->
+					<div class="card-img-overlay d-flex align-items-center p-3 pb-4 px-sm-5"> 
+						<div class="col-12 mt-auto d-md-flex justify-content-between align-items-center">
+							<h1 class="text-white display-5">{{ entry.title }}</h1>
+							<nav class="d-flex justify-content-center" aria-label="breadcrumb">
+						<ol class="breadcrumb breadcrumb-dots mb-0">
+							<li class="breadcrumb-item"><a href="{{ siteUrl }}"><i class="bi bi-house me-1"></i> Home</a></li>
+							<li class="breadcrumb-item active">All posts</li>
+						</ol>
+					</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+        {# START HEADING #}
+        <div class="container">
+            <div class="text-center mb-5">
+            <h3>Upcoming Races</h3>
+            <p class="lead">A list of upcoming races in Ireland</p>
+            </div>
+            {# END HEADING #}
+            {# START CraftCMS Looping in of races #}
+            {% set blogs = craft.entries().raceDate('> now').orderBy('raceDate asc').all() %}
+            {% for blog in blogs %} 
+            {% set photo = blog.featuredImage.one() %}
+            
+                {# START Race Card with Meta #}
+                <div class="card2 mb-3">
+                    <div class="card2-body">
+                        <div class="d-flex flex-column flex-lg-row">
+                            {# START IMAGE #}
+                            <span><img class="avatar-img rounded-circle avatar avatar-text rounded-3 me-4 mb-2" src="{{ blog.featuredImage.one().getUrl('catMini') }}" alt="avatar"></span>
+                            {# END IMAGE #}
+                            <div class="row flex-fill">
+                                {# START Race Meta #}
+                                <div class="col-sm-5">
+                                    <h4 class="h5">{{ blog.raceName}}</h4>
+                                    <span class="badge bg-secondary">{{ blog.raceDate|date('d M Y') }}</span> 
+                                    <span class="badge bg-success">{{ blog.raceCity}}, {{ blog.raceCounty}}</span>
+                                </div>
+                                {# END Race Meta #}
+                                {# START Category Loop for Race Distance #}
+                                <div class="col-sm-4 py-2">
+                                    Distance:{% for raceDistance in blog.raceDistances.all() %}
+                                        <span class="badge bg-secondary">
+                                            {{ raceDistance.title }}
+                                        </span>   
+                                    {% endfor %}         
+                                </div>
+                                {# END Category Loop for Race Distance #}
+                                {# START CTA for Race #}
+                                <div class="col-sm-3 text-lg-end">
+                                    <a href="{{ blog.url }}" class="btn btn-primary stretched-link">Learn More...</a>
+                                </div>
+                                {# END CTA for Race #}                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {# END Race Card with Meta #}
+              {% endfor %}
+            {# END CraftCMS Looping in of races #}
+        </div>
+
+
+
+
+
+
+{# Fetch all categories in the 'raceDistance' group #}
+{% set raceDistanceCategories = craft.categories.group('raceDistance').all() %}
+
+{# Create a dropdown filter for 'raceDistance' categories #}
+<form method="get" action="">
+    <select name="filterDistance" id="filterDistance">
+        <option value="">All Distances</option>
+        {% for category in raceDistanceCategories %}
+            <option value="{{ category.slug }}">{{ category.title }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+{# Get the selected 'raceDistance' slug from the query string #}
+{% set selectedDistanceSlug = craft.app.request.getQueryParam('filterDistance') %}
+
+{# Fetch the entries from the 'racesCh' channel #}
+{% set racesEntriesQuery = craft.entries.section('racesCh') %}
+
+{# If a category is selected, apply the filtering #}
+{% if selectedDistanceSlug %}
+    {% set selectedDistanceCategory = craft.categories.slug(selectedDistanceSlug).one() %}
+    {% set racesEntriesQuery = racesEntriesQuery.relatedTo(selectedDistanceCategory) %}
+{% endif %}
+
+{% set racesEntries = racesEntriesQuery.all() %}
+
+{# Display the filtered entries #}
+{% for race in racesEntries %}
+    <h3>{{ race.title }}</h3>
+    {% set raceDistanceCategory = race.raceDistance.all() %}
+    {% if raceDistanceCategory %}
+        <p>Distance: {{ raceDistanceCategory.title }}</p>
+    {% endif %}
+{% endfor %} 
+
+
+  {% endblock %}

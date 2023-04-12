@@ -1,0 +1,55 @@
+<!-- =======================
+Latest news slider START -->
+<section class="py-4 card-grid">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!-- Slider START -->
+				<div class="tiny-slider">
+					<div class="tiny-slider-inner"
+					data-autoplay="true"
+					data-hoverpause="true"
+					data-gutter="24"
+					data-arrow="false"
+					data-dots="false"
+					data-items-md="2" 
+					data-items-sm="2" 
+					data-items-xs="1"
+					data-items="3" >
+
+
+						{% set blogs = craft.entries.section('blog').all() %}
+                        {% for blog in blogs %} 
+                        {% set photo = blog.featuredImage.one() %}
+
+
+						<div class="card">
+							<div class="row g-3">
+								<div class="col-3">
+									<img class="rounded-3" src="{{ blog.featuredImage.one().getUrl('miniCard') }}" alt="">
+								</div>
+								<div class="col-9">
+									<h5><a href="{{ blog.url }}" class="btn-link stretched-link text-reset fw-bold">{{ blog.title }}</a></h5>
+									<!-- Card info -->
+									<ul class="nav nav-divider align-items-center small">
+										<li class="nav-item">
+											<div class="nav-link position-relative">
+												<span>by <a href="#" class="stretched-link text-reset btn-link">Samuel</a></span>
+											</div>
+										</li>
+										<li class="nav-item">{{blog.postDate|date('d/M/Y')}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+
+					</div>
+				</div>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Latest news slider END -->

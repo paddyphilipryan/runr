@@ -1,0 +1,19 @@
+columnSuffix: azxkwnya
+contentColumnType: text
+fieldGroup: f0b3c4f3-fd2e-4f0c-b31b-ad26982ff05f # Races
+handle: raceCity
+instructions: null
+name: 'Race City'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

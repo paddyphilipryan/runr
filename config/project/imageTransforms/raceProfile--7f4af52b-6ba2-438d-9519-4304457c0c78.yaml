@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: raceProfile
+height: 100
+interlace: none
+mode: crop
+name: 'Race Profile'
+position: center-center
+quality: 60
+upscale: true
+width: 200

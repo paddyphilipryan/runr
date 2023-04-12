@@ -1,0 +1,144 @@
+description: ''
+handle: editors
+name: Editors
+permissions:
+  - accesscp
+  - 'createentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'createentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'createentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'createentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'createentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'createentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'createentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'createentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'createfolders:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'deleteassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'deletecategories:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'deleteentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'deleteentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'deleteentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'deleteentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'deleteentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'deleteentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'deleteentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'deleteentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'deletepeerassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'deletepeercategorydrafts:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'deletepeerentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'deletepeerentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'deletepeerentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'deletepeerentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'deletepeerentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'deletepeerentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'deletepeerentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'deletepeerentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'deletepeerentrydrafts:08ad92eb-cfb5-49d4-820f-ff7da4395e4b' # Subscribe
+  - 'deletepeerentrydrafts:425c87f6-a69b-4dd7-93e1-e8b30e0e55cb' # Races
+  - 'deletepeerentrydrafts:482daefc-46cd-4e4f-b61e-45d2aa45525b' # Marathons
+  - 'deletepeerentrydrafts:64eff408-ee54-4911-9f15-41c8994ceb02' # Contact
+  - 'deletepeerentrydrafts:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'deletepeerentrydrafts:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'deletepeerentrydrafts:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'deletepeerentrydrafts:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'deletepeerentrydrafts:ad540773-d2f0-4b0b-bda6-da13026362eb' # Nutrition
+  - 'deletepeerentrydrafts:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'deletepeerentrydrafts:b6599a8c-e938-4f38-8b85-66492561d1a1' # Physio Corner
+  - 'deletepeerentrydrafts:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'deletepeerentrydrafts:e1368e3b-1fb3-4c09-9c15-10e9403ad5dc' # Home
+  - 'deletepeerentrydrafts:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'deletepeerentrydrafts:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'deletepeerentrydrafts:f51a2162-b4d6-468e-ac97-f65ecbda080c' # Blogs
+  - 'editglobalset:afd4c98d-6be3-470b-84ef-7d50c58a5a70' # Header
+  - 'editglobalset:c46f48fa-9e00-43e2-955e-66ad2a6c4b36' # Footer
+  - 'editimages:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'editpeerimages:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'replacefiles:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'replacepeerfiles:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'saveassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'savecategories:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'saveentries:08ad92eb-cfb5-49d4-820f-ff7da4395e4b' # Subscribe
+  - 'saveentries:425c87f6-a69b-4dd7-93e1-e8b30e0e55cb' # Races
+  - 'saveentries:482daefc-46cd-4e4f-b61e-45d2aa45525b' # Marathons
+  - 'saveentries:64eff408-ee54-4911-9f15-41c8994ceb02' # Contact
+  - 'saveentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'saveentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'saveentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'saveentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'saveentries:ad540773-d2f0-4b0b-bda6-da13026362eb' # Nutrition
+  - 'saveentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'saveentries:b6599a8c-e938-4f38-8b85-66492561d1a1' # Physio Corner
+  - 'saveentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'saveentries:e1368e3b-1fb3-4c09-9c15-10e9403ad5dc' # Home
+  - 'saveentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'saveentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'saveentries:f51a2162-b4d6-468e-ac97-f65ecbda080c' # Blogs
+  - 'savepeerassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'savepeercategorydrafts:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'savepeerentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'savepeerentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'savepeerentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'savepeerentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'savepeerentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'savepeerentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'savepeerentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'savepeerentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'savepeerentrydrafts:08ad92eb-cfb5-49d4-820f-ff7da4395e4b' # Subscribe
+  - 'savepeerentrydrafts:425c87f6-a69b-4dd7-93e1-e8b30e0e55cb' # Races
+  - 'savepeerentrydrafts:482daefc-46cd-4e4f-b61e-45d2aa45525b' # Marathons
+  - 'savepeerentrydrafts:64eff408-ee54-4911-9f15-41c8994ceb02' # Contact
+  - 'savepeerentrydrafts:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'savepeerentrydrafts:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'savepeerentrydrafts:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'savepeerentrydrafts:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'savepeerentrydrafts:ad540773-d2f0-4b0b-bda6-da13026362eb' # Nutrition
+  - 'savepeerentrydrafts:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'savepeerentrydrafts:b6599a8c-e938-4f38-8b85-66492561d1a1' # Physio Corner
+  - 'savepeerentrydrafts:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'savepeerentrydrafts:e1368e3b-1fb3-4c09-9c15-10e9403ad5dc' # Home
+  - 'savepeerentrydrafts:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'savepeerentrydrafts:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'savepeerentrydrafts:f51a2162-b4d6-468e-ac97-f65ecbda080c' # Blogs
+  - 'viewassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'viewcategories:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'viewentries:08ad92eb-cfb5-49d4-820f-ff7da4395e4b' # Subscribe
+  - 'viewentries:425c87f6-a69b-4dd7-93e1-e8b30e0e55cb' # Races
+  - 'viewentries:482daefc-46cd-4e4f-b61e-45d2aa45525b' # Marathons
+  - 'viewentries:64eff408-ee54-4911-9f15-41c8994ceb02' # Contact
+  - 'viewentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'viewentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'viewentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'viewentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'viewentries:ad540773-d2f0-4b0b-bda6-da13026362eb' # Nutrition
+  - 'viewentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'viewentries:b6599a8c-e938-4f38-8b85-66492561d1a1' # Physio Corner
+  - 'viewentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'viewentries:e1368e3b-1fb3-4c09-9c15-10e9403ad5dc' # Home
+  - 'viewentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'viewentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'viewentries:f51a2162-b4d6-468e-ac97-f65ecbda080c' # Blogs
+  - 'viewpeerassets:3a45d264-6a8a-4466-bcbe-b6c83d2a1490' # Uploads
+  - 'viewpeercategorydrafts:9981a4f9-c028-4225-849c-564abd5dc25e' # Categories
+  - 'viewpeerentries:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'viewpeerentries:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'viewpeerentries:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'viewpeerentries:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'viewpeerentries:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'viewpeerentries:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'viewpeerentries:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'viewpeerentries:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'viewpeerentrydrafts:08ad92eb-cfb5-49d4-820f-ff7da4395e4b' # Subscribe
+  - 'viewpeerentrydrafts:425c87f6-a69b-4dd7-93e1-e8b30e0e55cb' # Races
+  - 'viewpeerentrydrafts:482daefc-46cd-4e4f-b61e-45d2aa45525b' # Marathons
+  - 'viewpeerentrydrafts:64eff408-ee54-4911-9f15-41c8994ceb02' # Contact
+  - 'viewpeerentrydrafts:7db06de3-76b7-43bc-9ff1-28f8ecf767be' # Nutrition Ch
+  - 'viewpeerentrydrafts:7fa023e1-a359-427b-84a9-0495742c807e' # Clubs
+  - 'viewpeerentrydrafts:96d804f4-3f9d-4771-b1c2-a71f61c3afde'
+  - 'viewpeerentrydrafts:a61b30a6-e258-4588-99a7-18946b0c228a' # Marathons Ch
+  - 'viewpeerentrydrafts:ad540773-d2f0-4b0b-bda6-da13026362eb' # Nutrition
+  - 'viewpeerentrydrafts:aec34900-7f2f-4c46-aeba-bbdaed24700a' # Races Ch
+  - 'viewpeerentrydrafts:b6599a8c-e938-4f38-8b85-66492561d1a1' # Physio Corner
+  - 'viewpeerentrydrafts:d59ab545-9736-4a2f-8e27-ecef3b589928' # Blog
+  - 'viewpeerentrydrafts:e1368e3b-1fb3-4c09-9c15-10e9403ad5dc' # Home
+  - 'viewpeerentrydrafts:eec7d882-01fe-45e8-98fa-f0de1402106d' # Physio Ch
+  - 'viewpeerentrydrafts:f27231f1-beef-447d-b028-5f0c7e4a9bc9' # News
+  - 'viewpeerentrydrafts:f51a2162-b4d6-468e-ac97-f65ecbda080c' # Blogs

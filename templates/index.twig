@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% set favl = header.lightFavicon.one() %}
+    {% set favd = header.darkFavicon.one() %}
+	<title>{{ siteName }}</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="busylittlepixels.com">
+	<meta name="description" content="The Home of Running">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="{{ favd.url }}">
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/vendor/tiny-slider/tiny-slider.css">
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/css/style.css">
+	<script type="ec50d7e8029e860c988fbce8-text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "f4a54e0c912d7d17efc64b7d5773c3f71d859875b152b9ab47ea872fe52f71d854eb1daeeaf905caed20aa91b1e7a451", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.eu/widget?plugin_source=wordpress";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script><script type="ec50d7e8029e860c988fbce8-text/javascript"> $zoho.salesiq.internalready = function() { $zoho.salesiq.floatbutton.visible("hide"); }</script> <a href="#top" class="pk-scroll-to-top">
+</head>
+<body>
+ 
+{% include "globals/header" %}	
+{% include "test/dark" %}	
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+    {# Template goes here #}
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+{% include "globals/footer" %}	
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="{{ siteUrl }}assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="{{ siteUrl }}assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="{{ siteUrl }}assets/vendor/sticky-js/sticky.min.js"></script>
+<script src="{{ siteUrl }}assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="{{ siteUrl }}assets/vendor/plyr/plyr.js"></script>
+
+<!-- Template Functions -->
+<script src="{{ siteUrl }}assets/js/functions.js"></script>
+
+
+</body>
+</html>

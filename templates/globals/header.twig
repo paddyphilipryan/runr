@@ -1,0 +1,138 @@
+
+
+
+<!-- Offcanvas START -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+	<div class="offcanvas-header justify-content-end">
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body d-flex flex-column pt-0">
+		{% set logol = header.logoLight.one() %}
+       	{% set logod = header.logoDark.one() %}
+		<div>
+			<img class="light-mode-item my-3" src="{{ logod.url }}" alt="logo">
+			<img class="dark-mode-item my-3" src="{{ logol.url }}" alt="logo">
+			<p>{{ header.commonExcerpt }}</p>
+			<!-- Nav START -->
+			<ul class="nav d-block flex-column my-4">
+				{% for link in header.offcanvasNav.all() %}
+                {% set destination = link.linkDestination.one() %}
+                {% set activeLink = craft.app.request.segments|first == destination.uri %}
+				<li class="nav-item h5"> <a class="nav-link" href="{{ destination.url }}">{{ link.linkText }}</a></li>
+				{% endfor %}
+			</ul>
+			<!-- Nav END -->
+			<div class="bg-primary bg-opacity-10 p-4 mb-4 text-center w-100 rounded">
+				<span>{{ header.raceName }}</span>
+				<h3>{{ header.raceAddress }}</h3>
+				<p>{{ header.copyright }}</p>
+				<a href="{{ header.raceWebsite }}" class="btn btn-warning">{{ header.raceCounty }}</a>
+			</div>
+		</div>
+		<div class="mt-auto pb-3">
+			<!-- Address -->
+			<p class="text-body mb-2 fw-bold">{{ header.raceCountry }}</p>
+			<address class="mb-0">{{ header.mainContent }}</address>
+			<p class="mb-2">Call: <a href="{{ header.racePhone }}" class="text-body">{{ header.generalFreeText }}</a> </p>
+			<a href="{{ header.raceEmail }}" class="text-body d-block">{{ header.generalFreeText2 }}</a>
+		</div>
+	</div>
+</div>
+<!-- Offcanvas END -->
+
+<!-- =======================
+Header START -->
+<header class="navbar-light navbar-sticky header-static">
+	<div class="navbar-top d-none d-lg-block small">
+		<div class="container">
+			<div class="d-md-flex justify-content-between align-items-center my-2">
+				<!-- Top bar left -->
+				<ul class="nav">
+					<!-- Nav item link-->
+							{% for link in header.navLinks.all() %}
+                            {% set destination = link.linkDestination.one() %}
+                            {% set activeLink = craft.app.request.segments|first == destination.uri %}
+							<li class="nav-item"> <a class="nav-link" href="{{ destination.url }}">{{ link.linkText }}</a></li>
+							{% endfor %}
+				</ul>
+				<!-- Top bar right -->
+				<div class="d-flex align-items-center">
+					
+
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link px-2 fs-5" href="{{ header.facebook }}"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-2 fs-5" href="{{ header.twitter }}"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-2 fs-5" href="{{ header.instagram }}"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Divider -->
+			<div class="border-bottom border-2 border-primary opacity-1"></div>
+		</div>
+	</div>
+
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<!-- Logo START -->
+			{% set logol = header.logoLight.one() %}
+       		{% set logod = header.logoDark.one() %}
+			<a class="navbar-brand" href="{{ siteUrl }}">
+				<img class="navbar-brand-item light-mode-item" src="{{ logod.url }}" alt="logo">			
+				<img class="navbar-brand-item dark-mode-item" src="{{ logol.url }}" alt="logo">			
+			</a>
+			<!-- Logo END -->
+
+			
+
+			<!-- Main navbar START -->
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav navbar-nav-scroll navbar-lh-sm">
+							<!-- Nav item link-->
+							{% for link in header.navLinks.all() %}
+                            {% set destination = link.linkDestination.one() %}
+                            {% set activeLink = craft.app.request.segments|first == destination.uri %}
+							<li class="nav-item"> <a class="nav-link" href="{{ destination.url }}">{{ link.linkText }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+			<!-- Main navbar END -->
+
+			<!-- Nav right START -->
+			<div class="nav flex-nowrap align-items-center">
+				<!-- Nav Button -->
+				<div class="nav-item d-none d-md-block">
+					<a href="/subscribe" class="btn btn-sm btn-danger mb-0 mx-2">Subscribe!</a>
+				</div>
+				<!-- Nav Search -->
+				<div class="nav-item dropdown dropdown-toggle-icon-none nav-search">
+					<a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="bi bi-search fs-4"> </i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
+						<form class="input-group">
+							<input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-success m-0" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+				<!-- Offcanvas menu toggler -->
+				<div class="nav-item">
+					<a class="nav-link p-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+						<i class="bi bi-text-right rtl-flip fs-2" data-bs-target="#offcanvasMenu"> </i>
+					</a>
+				</div>
+			</div>
+			<!-- Nav right END -->
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- =======================
+Header END -->

@@ -1,0 +1,41 @@
+<!-- =======================
+Highlights START -->
+
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Title -->
+				<div class="col-12">
+					<div class="tiny-slider arrow-blur arrow-round rounded-3 overflow-hidden">
+						<div class="tiny-slider-inner"
+						data-autoplay="true"
+						data-hoverpause="true"
+						data-gutter="24"
+						data-arrow="true"
+						data-dots="false"
+						data-items-xl="4"
+						data-items-lg="3" 
+						data-items-md="3" 
+						data-items-sm="2" 
+						data-items-xs="1">
+						<!-- Card item START -->
+                        {% for gallery in entry.raceGallery.all() %}
+                        {% set photo = gallery.image.one() %}   
+						<div>
+							<div class="card card-overlay-bottom card-img-scale">
+								<!-- Card Image -->
+                                <img class="card-img" src="{{ photo.getUrl('gallery') }}" alt="{{ entry.title }} Gallery">
+							</div>
+						</div>
+						<!-- Card item END -->
+                         {% endfor %}
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Highlights END -->

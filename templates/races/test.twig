@@ -1,0 +1,88 @@
+{% extends "index" %}
+{% block content %}
+{# ... Your existing code for the page layout ... #}
+
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="card card-overlay-bottom h-300 overflow-hidden text-center" style="background-image:url({{ entry.featuredImage.one().getUrl('catHero') }}); background-position: center left; background-size: cover;">
+					<!-- Card Image overlay -->
+					<div class="card-img-overlay d-flex align-items-center p-3 pb-4 px-sm-5"> 
+						<div class="col-12 mt-auto d-md-flex justify-content-between align-items-center">
+							<h1 class="text-white display-5">{{ entry.title }}</h1>
+							<nav class="d-flex justify-content-center" aria-label="breadcrumb">
+						<ol class="breadcrumb breadcrumb-dots mb-0">
+							<li class="breadcrumb-item"><a href="{{ siteUrl }}"><i class="bi bi-house me-1"></i> Home</a></li>
+							<li class="breadcrumb-item active">All posts</li>
+						</ol>
+					</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3>Upcoming Races</h3>
+            <p class="lead">A list of upcoming races in Ireland</p>
+        </div>
+        <div>
+            {# Fetch all categories in the 'raceDistance' group #}
+            {% set raceDistanceCategories = craft.categories.group('raceDistance').all() %}
+            {# Create a dropdown filter for 'raceDistance' categories #}
+                <form method="get" action="">
+                    <select name="filterDistance" id="filterDistance">
+                        <option value="">All Distances</option>
+                        {% for category in raceDistanceCategories %}
+                            <option value="{{ category.slug }}">{{ category.title }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit">Filter</button>
+                </form>
+            {# Get the selected 'raceDistance' slug from the query string #}
+            {% set selectedDistanceSlug = craft.app.request.getQueryParam('filterDistance') %}
+            {# Fetch the entries from the 'racesCh' channel #}
+            {% set racesEntriesQuery = craft.entries.section('racesCh').raceDate('> now').orderBy('raceDate asc') %}
+            {# If a category is selected, apply the filtering #}
+            {% if selectedDistanceSlug %}
+                {% set selectedDistanceCategory = craft.categories.slug(selectedDistanceSlug).one() %}
+               git checkout main  {% set racesEntriesQuery = racesEntriesQuery.relatedTo(selectedDistanceCategory) %}
+            {% endif %}
+            {% set racesEntries = racesEntriesQuery.all() %}
+            {# Display the filtered entries #}
+            <!-- Race listing container -->
+                <div class="race-listing-container">
+                    {% for race in racesEntries %}
+                        <div class="race-listing-card">
+                            <div class="race-image-container">
+                                <img class="race-image" src="{{ race.featuredImage.one().getUrl('catMini') }}" alt="{{ race.title }}">
+                            </div>
+                            <div class="race-details-container">
+                                <h3 class="race-title">{{ race.title }}</h3>
+                                <p class="race-location-date">{{ race.raceCity }}, {{ race.raceCounty }} - {{ race.raceDate|date('d M Y') }}</p>
+                                <div class="race-distance-categories-container">
+                    {% set raceDistanceCategories = race.raceDistances.all() %}
+                    {% for raceDistanceCategory in raceDistanceCategories %}
+                        <div class="race-distance-category">
+                            {{ raceDistanceCategory.title }}
+                        </div>
+                    {% endfor %}
+                </div>
+                                            
+                            <a href="{{ race.url }}" class="race-details-btn">Race Details</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

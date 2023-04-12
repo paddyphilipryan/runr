@@ -1,0 +1,127 @@
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        elementCondition: null
+        fieldUid: f4cc1522-e2ab-467b-9d42-c97273ad41be # Race Address
+        instructions: null
+        label: Name
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: fa9b5c1a-28aa-41e3-a51d-992990ad65c3
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 29b1f74f-0e55-41fb-8d42-dae2f155f1cb # Race Email
+        instructions: null
+        label: Email
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 40e0fe78-58b2-49b8-8176-e07a7392794e
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: fa7b64ed-a01d-49d6-ac41-0662e5ccddbe # Featured Image
+        instructions: null
+        label: Headshot
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 8bf3945c-2e1f-4f2b-84ef-38ada5098918
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 0530ea04-1958-4b00-8b30-cefd3310fd52 # Email
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: b413317b-e365-4d05-8b74-8e597695ac0b
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: f88f9558-ae14-4cee-9d40-fc6806e4a6e1 # Facebook
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 20698193-a006-4e83-8895-1afc15c17081
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 9584d9d6-08eb-4372-9515-c76f85f84e93 # Instagram
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 2a509309-863a-487a-a1a1-a7435e7a2d27
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: f2d278e1-aa3c-49b4-b14c-fb37e4cc157d # LinkedIn
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 51cceb09-05ce-4be9-8833-eaf902c4166a
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 0b310f6d-a50a-4d4c-ac79-1156fc10b5a3 # Strava
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 815d876e-3b6b-4e3d-bb44-eeafeba78beb
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: dd451c83-eab0-43ad-a79c-5393b6ea8c87 # Twitter
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 7213c925-4a88-4583-89c8-7fe8d8bcdd36
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 48979417-2c5d-412b-b257-474b6aec8c98 # Forum
+        instructions: null
+        label: Website
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: dec81524-fe81-4034-adde-b25300412e79
+        userCondition: null
+        warning: null
+        width: 100
+    name: 'User Details'
+    uid: 4c155a0a-8081-46f2-9dca-af7d6f073ab9
+    userCondition: null

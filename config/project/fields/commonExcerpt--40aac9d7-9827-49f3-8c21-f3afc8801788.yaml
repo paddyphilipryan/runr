@@ -1,0 +1,19 @@
+columnSuffix: ystldjwl
+contentColumnType: text
+fieldGroup: 6bceb3e8-238b-4e43-a2eb-1315829690ef # BlogCommon
+handle: commonExcerpt
+instructions: null
+name: 'Common Excerpt'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
