@@ -17971,12 +17971,14 @@ overscroll-behavior-inline: contain;
 .race-title {
   font-size: 18px;
   margin-bottom: 8px;
+  color:#fff!important;
 }
 
 /* Race location and date */
 .race-location-date {
   font-size: 14px;
   margin-bottom: 8px;
+  color: #c8c6c6;
 }
 
 /* Race distance category */
