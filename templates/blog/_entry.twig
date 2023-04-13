@@ -18,8 +18,6 @@ Inner intro START -->
           <!-- Card Image overlay -->
           <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4"> 
             <div class="w-100 my-auto">
-              <!-- Card category -->
-              <a href="#" class="badge text-bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Lifestyle</a>
               <!-- Card title -->
               <h2 class="text-white display-5">{{ entry.title }}</h2>
               <!-- Card info -->
@@ -27,14 +25,12 @@ Inner intro START -->
                 <li class="nav-item">
                   <div class="nav-link">
                     <div class="d-flex align-items-center text-white position-relative">
-                      <div class="avatar avatar-sm">
-                        <img class="avatar-img rounded-circle" src="web/assets/images/avatar/11.jpg" alt="avatar">
-                      </div>
-                      <span class="ms-3">by <a href="{{ entry.url }}" class="stretched-link text-reset btn-link">{{ entry.author }}</a></span>
+        
+                      <span class="ms-3">By <a href="{{ entry.url }}" class="stretched-link text-reset btn-link">{{ entry.author }}</a></span>
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">{{entry.postDate|date('d/M/Y')}}</li>
+                <li class="nav-item">{{entry.postDate|date('d M Y')}}</li>
                 <li class="nav-item">5 min read</li>
               </ul>
             </div>
@@ -59,11 +55,7 @@ Main START -->
 				<!-- Author info START -->
 				<div class="d-flex p-2 p-md-4 my-3 bg-primary bg-opacity-10 rounded">
 					<!-- Avatar -->
-					<a href="#">
-						<div class="avatar avatar-xxl me-2 me-md-4">
-							<img class="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="avatar">
-						</div>
-					</a>
+					
 					<!-- Info -->
 					<div>
 						<div class="d-sm-flex align-items-center justify-content-between">
@@ -75,17 +67,7 @@ Main START -->
 						</div>
 						<p class="my-2">{{ entry.author }} is a senior editor for Run Republic and also reports on breaking news based in Dublin. He has written about government, criminal justice, and the role of money in politics since 2015.</p>
 						<!-- Social icons -->
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link ps-0 pe-2 fs-5" href="#"><i class="fab fa-facebook-square"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-twitter-square"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-linkedin"></i></a>
-							</li>
-						</ul>					
+									
 					</div>
 				</div>
 				<!-- Author info END -->
@@ -100,45 +82,43 @@ Main START -->
           <!-- Categories -->
 	      	<div class="row g-2">
 						<h5>Categories</h5>
+						<a href="#">
 						<div class="d-flex justify-content-between align-items-center bg-warning bg-opacity-15 rounded p-2 position-relative">
-							<h6 class="m-0 text-warning">Photography</h6>
-							<a href="#" class="badge bg-warning text-dark stretched-link">09</a>
-						</div>
+							<h6 class="m-0 text-warning">Beginners</h6>
+						</div></a><a href="#">
 						<div class="d-flex justify-content-between align-items-center bg-info bg-opacity-10 rounded p-2 position-relative">
-							<h6 class="m-0 text-info">Travel</h6>
-							<a href="#" class="badge bg-info stretched-link">25</a>
-						</div>
+							<h6 class="m-0 text-info">Physio Corner</h6>
+						</div></a><a href="#">
 						<div class="d-flex justify-content-between align-items-center bg-danger bg-opacity-10 rounded p-2 position-relative">
-							<h6 class="m-0 text-danger">Photography</h6>
-							<a href="#" class="badge bg-danger stretched-link">75</a>
-						</div>
+							<h6 class="m-0 text-danger">Nutrition</h6>
+						</div></a><a href="#">
 						<div class="d-flex justify-content-between align-items-center bg-primary bg-opacity-10 rounded p-2 position-relative">
-							<h6 class="m-0 text-primary">Covid-19</h6>
-							<a href="#" class="badge bg-primary stretched-link">19</a>
-						</div>
+							<h6 class="m-0 text-primary">Upcoming Races</h6>
+						</div></a><a href="#">
 						<div class="d-flex justify-content-between align-items-center bg-success bg-opacity-10 rounded p-2 position-relative">
-							<h6 class="m-0 text-success">Business</h6>
-							<a href="#" class="badge bg-success stretched-link">35</a>
-						</div>
+							<h6 class="m-0 text-success">Latest News</h6>
+						</div></a>
 					</div>
 					
 					<!-- Newsletter START -->
 					<div class="bg-light p-4 mt-4 rounded-3 text-center">
 						<h4>Subscribe to our mailing list!</h4>
-						<form>
-							<div class="mb-3">
-								<input type="email" class="form-control" placeholder="Email address">
-							</div>
-							<button type="submit" class="btn btn-primary">Subscribe</button>
-							<div class="form-text">We don't spam</div>
-						</form>
+						<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+							<script>
+							hbspt.forms.create({
+								region: "eu1",
+								portalId: "25769310",
+								formId: "c1c42024-0827-46fd-b834-d8d99d0e353e"
+							});
+							</script>
 					</div>
 					<!-- Newsletter END -->
 
 					<!-- Advertisement -->
 					<div class="mt-4">
+						<h4 class="m-0"><a href="#">Advertisement</a></h4>
 						<a href="#" class="d-block card-img-flash">
-							<img src="assets/images/adv.png" alt="">
+							<img src="https://runr.ddev.site//var/www/html/web/_miniCard/mobility.jpeg" alt="">
 						</a>
 					</div>
 				</div>

@@ -18017,6 +18017,11 @@ padding: 0 1em 1em;
 
 overflow-x: auto;
 overscroll-behavior-inline: contain;
+scrollbar-width: none;  
+}
+
+.media-scroller3::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 
@@ -18024,4 +18029,8 @@ overscroll-behavior-inline: contain;
   .media-scroller3 {
     grid-auto-columns: 66%;
   }
+}
+
+.hs-form .hs-form-field label:not(.hs-error-msg) {
+  color: #fff!important;
 }
